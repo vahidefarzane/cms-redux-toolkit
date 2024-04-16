@@ -1,0 +1,96 @@
+.information {
+  padding: 4rem;
+  height: 81.5%;
+  overflow-y: auto;
+}
+
+.card-header a {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+/* upload input */
+.change-profile-input-box,
+.change-banner-input-box {
+  position: relative;
+  height: 180px;
+  border: 1px solid var(--primary-color);
+  padding: 20px;
+}
+.change-profile-input-box {
+  width: 190px;
+}
+.change-profile-input-box::before,
+.change-banner-input-box::before {
+  position: absolute;
+  top: -8px;
+  background: var(--white);
+  padding: 0 10px;
+}
+.change-profile-input-box::before {
+  content: "پروفایل";
+  left: 50%;
+  transform: translateX(-50%);
+}
+.upload-profile-input-label,
+.upload-banner-input-label {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.upload-profile-input-label input,
+.upload-banner-input-label input {
+  display: none;
+}
+.change-banner-input-box::before {
+  content: "بنر";
+  left: 30px;
+}
+.change-profile-pic,
+.change-banner-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 1px solid var(--primary-color);
+}
+.change-banner-input-box {
+  width: 80%;
+}
+
+/* upload input */
+
+.active {
+  width: 12rem;
+  height: 2px;
+  background-color: var(--blue);
+  position: absolute;
+  top: 6.5rem;
+  right: 11rem;
+}
+
+#form-new-member-team .form__icon {
+  right: 3%;
+  margin-top: 0.5rem;
+}
+
+.dark .change-profile-input-box::before,
+.dark .change-banner-input-box::before {
+  background: var(--secondry-light);
+}
+
+.dark .information .card {
+  background-color: var(--secondry);
+}
+
+.dark .information .card-header {
+  background-color: var(--white-low-opacity);
+  color: var(--light) !important;
+}
+
+.dark .information .card-header a {
+  color: var(--secondry);
+}

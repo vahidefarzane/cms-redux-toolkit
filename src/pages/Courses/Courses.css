@@ -1,0 +1,149 @@
+.products {
+  height: 72%;
+  padding: 2rem;
+}
+
+.new-course {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  height: 15%;
+  background-color: var(--light);
+}
+
+.products__item {
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.product__teg-text {
+  font-size: 1.2rem;
+}
+
+.products__info {
+  height: 75%;
+  padding: 2rem;
+}
+
+.products__name {
+  color: var(--yellow);
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.products__short-desc {
+  color: grey;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.products__tags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background-color: var(--light);
+  padding: 0 0;
+  min-height: 25%;
+  color: var(--dark-blue);
+}
+
+.products__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.products__btns {
+  display: flex;
+}
+
+.active {
+  width: 12rem;
+  height: 2px;
+  background-color: var(--blue);
+  position: absolute;
+  top: 6.5rem;
+  right: 26%;
+}
+
+.products__img {
+  width: 25rem;
+  height: 17rem;
+  transition: all 0.4s;
+}
+
+.products__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+.btn-modal-new-category {
+  margin-right: auto;
+}
+
+.tags-box {
+  margin: 4rem 0;
+  padding: 1rem 2rem;
+  border: 1px solid var(--secondry-light);
+  border-radius: 3px;
+}
+
+.tag-stroe {
+  background-color: var(--secondry-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  color: var(--light);
+}
+
+.product__discount-Box {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-orange);
+  font-size: 1.3rem;
+  transform: rotate(-20deg);
+  transition: all 0.4s;
+  color: var(--light);
+}
+
+.products__item:hover .product__discount-Box {
+  transform: rotate(0);
+}
+
+.form-new-product .fa:not(.fa-user, .fa-photo-film),
+#form-general-dicsount .fa {
+  right: 5%;
+}
+
+/* DARK MODE */
+.dark .new-course,
+.dark .products__tags {
+  background-color: var(--primary-color);
+  color: var(--light);
+}
+
+.dark .products__img {
+  filter: brightness(60%);
+}
+.dark .products__item:hover .products__img {
+  filter: brightness(100%);
+}
+
+.dark .tags-box {
+  border: 1px solid var(--white-low-opacity);
+}
+/* END DARK MODE */
